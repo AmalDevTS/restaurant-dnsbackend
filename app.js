@@ -16,3 +16,7 @@ app.use("/api", menuRoutes);
 
 const PORT = 4500;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
+app.get('/',(req,res)=>{
+    res.send("Server is running successfully")
+})
